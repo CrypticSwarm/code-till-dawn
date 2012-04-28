@@ -6,7 +6,10 @@
 , "private": true
 , "main": "./server.js"
 , "dependencies": 
-  { "github-flavored-markdown": ""
+  { "express": ""
+  , "stylus": ""
+  , "nib": ""
+  , "async-forms": ""
   }
 , "licenses" : [ { "type" : "MIT" } ]
 }
