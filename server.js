@@ -26,6 +26,8 @@ app.configure(function () {
 
 app.helpers({ widgets: require('async-forms').widgets })
 
+require('./routes/user')(app)
+
 app.listen(port, function () {
   console.log(appName, port)
 })

@@ -1,0 +1,13 @@
+-each field, k in form.fields
+  .formField
+    - if (!field.widget || !field.widget.noLabel)
+      label(for=form.name + '[' + k + ']') 
+        =field.getDisplay()
+    - if (form.error && form.error[k])
+      -each err in form.error[k]
+        .error #{err.message}
+    span
+      -if (field.widget)
+        !=field.widget(field.name, ((form.values && form.values[k]) || null))
+      -else
+        !=widgets.text(field.name, ((form.values && form.values[k]) || null))
