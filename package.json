@@ -1,0 +1,12 @@
+{ "name": "code-till-dawn"
+, "description": "Social hack-up tracker."
+, "version": "0.0.1"
+, "private": true
+, "authors" : [ "Perrin Westrich <crypticswarm@gmail.com>" ]
+, "private": true
+, "main": "./server.js"
+, "dependencies": 
+  { "github-flavored-markdown": ""
+  }
+, "licenses" : [ { "type" : "MIT" } ]
+}
